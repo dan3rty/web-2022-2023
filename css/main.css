@@ -1,0 +1,56 @@
+.page
+{
+    margin: 0;
+}
+
+.header-block__logo
+{
+    font: 400 26px "Lora";     
+}
+
+.header-block__ref
+{
+    font: 400 12px/1.67 "Oxygen";
+    text-decoration: 0;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.header-block__title
+{
+    font: 400 50px/1.02 "Lora";
+    letter-spacing: 2px;
+}
+
+.header-block__text
+{
+    font: 400 17px/1.18 "Oxygen";
+}
+
+.footer-block
+{
+    background: url(../images/footer.jpg) no-repeat;
+    background-size: cover;
+    height: 89px;
+}
+
+.footer-block__logo
+{
+    font: 400 26px "Lora";
+    color: #FFFFFF;
+}
+
+.footer-block__ref
+{
+    font: 400 11px/2.36 "Oxygen";
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-block__blackout
+{
+    height: 89px;
+    background: rgba(35, 47, 56, 0.6);
+}

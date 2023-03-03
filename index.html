@@ -3,133 +3,144 @@
   <head>
     <meta charset="UTF-8">
     <title>Escape</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&display=swap" rel="stylesheet" />
   </head>
-  <body>
-    <header>
-      <span>Escape.</span>
+  <body class="page">
+    <header class="header-block">
+      <span class="header-block__logo header-block__logo_color_white">Escape.</span>
       <nav>
-        <a href="">HOME</a>
-        <a href="">CATEGORIES</a>
-        <a href="">ABOUT</a>
-        <a href="">CONTACT</a>
+        <a class="header-block__ref header-block__ref_color_white" href="">HOME</a>
+        <a class="header-block__ref header-block__ref_color_white" href="">CATEGORIES</a>
+        <a class="header-block__ref header-block__ref_color_white" href="">ABOUT</a>
+        <a class="header-block__ref header-block__ref_color_white" href="">CONTACT</a>
       </nav>
-    </header>
-    <section>
-      <h1>Let's do it together</h1>
-      <p>
+      <h1 class="header-block__title header-block__title_color_white">Let's do it together</h1>
+      <span class="header-block__text header-block__text_color_white">
         We travel the world in search of stories. Come along for the ride.
-      </p>
-      <button>View Latest Posts</button>
-      <nav>
-        <a href="">Nature</a>
-        <a href="">Photography</a>
-        <a href="">Relaxation</a>
-        <a href="">Vacation</a>
-        <a href="">Travel</a>
-        <a href="">Adventure</a>
-      </nav>
-    </section>
-    <section>
-      <h2>Featured Posts</h2>
-      <div>
-        <h3>The Road Ahead</h3>
-        <p>
-          The road ahead might be paved - it might not be.
-       </p>
-       <img src="/images/mat_vogels.png" />
-       <p>
-          Mat Vogels <span>September 25, 2015</span>
-        </p>
+      </span>
+      <button class="header-block__button">View Latest Posts</button>
+    </header>
+    <div class="tag-block">
+      <a class="tag-block__tag" href="">Nature</a>
+      <a class="tag-block__tag" href="">Photography</a>
+      <a class="tag-block__tag" href="">Relaxation</a>
+      <a class="tag-block__tag" href="">Vacation</a>
+      <a class="tag-block__tag" href="">Travel</a>
+      <a class="tag-block__tag" href="">Adventure</a>
+    </div>
+    <div class="main-block">
+      <section class="main-posts">
+        <h2 class="main-posts__title">Featured Posts</h2>
+        <div class="large-post large-post_image_the-road-ahead ">
+          <h3 class="large-post__title">The Road Ahead</h3>
+          <span class="large-post__text">
+            The road ahead might be paved - it might not be.
+          </span>
+          <img class="large-post__author-image" src="/images/mat_vogels.jpg" alt="Mat Vogels" />
+          <span class="large-post__author-name">Mat Vogels</span>
+          <span class="large-post__date">September 25, 2015</span>
+        </div>
+        <div class="large-post large-post_image_from-top-down">
+          <div class="large-post__tag">
+            <span class="tag__text">ADVENTURE</span>
+          </div>
+          <h3 class="large-post__title">From Top Down</h3> 
+          <span class="large-post__text">
+            Once a year, go someplace you've never been before.
+          </span>
+          <img class="large-post__author-image" src="/images/william_wong.jpg" alt="William Wong" />
+          <span class="large-post__author-name">William Wong</span>
+          <span class="large-post__date">September 25, 2015</span>
+        </div>
+      </section>
+      <section class="recent-posts">
+        <h2 class="recent-posts__title">Most Recent</h2>
+        <div class="small-post">
+          <img class="small-post__image" src="images/still_standing_tall.png" alt="Still Standing Tall" />
+          <h3 class="small-post__title">Still Standing Tall</h3>
+          <span class="small-post__text">
+            Life begins at the end of your comfort zone
+          </span>
+          <div class="small-post__information">
+            <img class="small-post__author-image" src="/images/william_wong.jpg" alt="William Wong" />
+            <span class="small-post__author-name">William Wong</span>
+            <span class="small-post__date">9/25/2015</span>
+          </div>
+        </div>
+        <div class="small-post">
+          <img class="small-post__image" src="/images/sunny_side_up.png" alt="Sunny Side Up" />
+          <h3 class="small-post__title">Sunny Side Up</h3>
+          <span class="small-post__text">
+            No place is ever as bad as they tell you it's going to be.
+          </span>
+          <div class="small-post__information">
+            <img class="small-post__author-image" src="/images/mat_vogels.jpg" alt="Mat Vogels" />
+            <span class="small-post__author-name">Mat Vogels</span>
+            <span class="small-post__date">9/25/2015</span>
+          </div>
+        </div>
+        <div class="small-post">
+          <img class="small-post__image" src="/images/water_falls.png" alt="Water Falls" />
+          <h3 class="small-post__title">Water Falls</h3>
+          <span class="small-post__text">
+            We travel not to escape life, but for life not to escape us.
+          </span>
+          <div class="small-post__information">
+            <img class="small-post__author-image" src="/images/mat_vogels.jpg" alt="Mat Vogels" />
+            <span class="small-post__author-name">Mat Vogels</span>
+            <span class="small-post__date">9/25/2015</span>
+          </div>
+        </div>
+        <div class="small-post">
+          <img class="small-post__image" src="/images/through_the_mist.png" alt="Through the Mist" />
+          <h3 class="small-post__title">Through the Mist</h3>
+          <span class="small-post__text">
+            Travel makes you see what a tiny place you occupy in the world.
+          </span>
+          <div class="small-post__information">
+            <img class="small-post__author-image" src="/images/william_wong.jpg" alt="William Wong" />
+            <span class="small-post__author-name">William Wong</span>
+            <span class="small-post__date">9/25/2015</span>
+          </div>
+        </div>
+        <div class="small-post">
+          <img class="small-post__image" src="/images/awaken_early.png" alt="Awaken Early" />
+          <h3 class="small-post__title">Awaken Early</h3>
+          <span class="small-post__text">
+            Not all those who wander are lost.
+          </span>
+          <div class="small-post__information">
+           <img class="small-post__author-image" src="/images/mat_vogels.jpg" alt="Mat Vogels" />
+            <span class="small-post__author-name">Mat Vogels</span>
+            <span class="small-post__date">9/25/2015</span>
+          </div>
+        </div>
+        <div class="small-post">
+          <img class="small-post__image" src="/images/try_it_always.png" alt="Try it Always" />
+          <h3 class="small-post__title">Try it Always</h3>
+          <span class="small-post__text">
+            The world is a book, and those who do not travel read only one page.
+          </span>
+          <div class="small-post__information">
+            <img class="small-post__author-image" src="/images/mat_vogels.jpg" alt="Mat Vogels" />
+            <span class="small-post__author-name">Mat Vogels</span>
+            <span class="small-post__date">9/25/2015</span>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer-block">
+      <div class="footer-block__blackout">
+        <span class="footer-block__logo">Escape.</span> 
+        <nav>
+          <a class="footer-block__ref" href="">HOME</a>
+          <a class="footer-block__ref" href="">CATEGORIES</a>
+          <a class="footer-block__ref" href="">ABOUT</a>
+          <a class="footer-block__ref" href="">CONTACT</a>
+        </nav>
       </div>
-      <div>
-        <h3><span>Adventure</span> From Top Down</h3>
-        <p>
-         Once a year, go someplace you've never been before.
-       </p>
-        <img src="/images/william_wong.jpg" />
-        <p>
-         William Wong <span>September 25, 2015</span>
-       </p>
-      </div>
-    </section>
-    <section>
-      <h2>Most Recent</h2>
-      <div>
-        <img src="images/still_standing_tall.png" alt="Still Standing Tall" width="296" height="150" />
-        <h3>Still Standing Tall</h3>
-        <p>
-          Life begins at the end of your comfort zone
-        </p>
-        <img src="/images/william_wong.jpg" />
-        <p>
-          William Wong <span>September 25, 2015</span>
-        </p>
-      </div>
-      <div>
-        <img src="/images/sunny_side_up.png" alt="Sunny Side Up" width="296" height="150" />
-        <h3>Sunny Side Up</h3>
-        <p>
-          No place is ever as bad as they tell you it's going to be.
-        </p>
-        <img src="/images/mat_vogels.png" />
-        <p>
-          Mat Vogels <span>September 25, 2015</span>
-        </p>
-      </div>
-      <div>
-        <img src="/images/water_falls.png" alt="Water Falls" width="296" height="150" />
-        <h3>Water Falls</h3>
-        <p>
-          We travel not to escape life, but for life not to escape us.
-        </p>
-        <img src="/images/mat_vogels.png" />
-        <p>
-          Mat Vogels <span>September 25, 2015</span>
-        </p>
-      </div>
-      <div>
-        <img src="/images/through_the_mist.png" alt="Through the Mist" width="296" height="150" />
-        <h3>Through the Mist</h3>
-        <p>
-          Travel makes you see what a tiny place you occupy in the world.
-        </p>
-        <img src="/images/william_wong.jpg" />
-        <p>
-          William Wong <span>September 25, 2015</span>
-        </p>
-      </div>
-      <div>
-        <img src="/images/awaken_early.png" alt="Awaken Early" width="296" height="150" />
-        <h3>Awaken Early</h3>
-        <p>
-          Not all those who wander are lost.
-        </p>
-        <img src="/images/mat_vogels.png" />
-        <p>
-          Mat Vogels <span>September 25, 2015</span>
-        </p>
-      </div>
-      <div>
-        <img src="/images/try_it_always.png" alt="Try it Always" width="296" height="150" />
-        <h3>Try it Always</h3>
-        <p>
-          The world is a book, and those who do not travel read only one page.
-        </p>
-        <img src="/images/mat_vogels.png" />
-        <p>
-          Mat Vogels <span>September 25, 2015</span>
-        </p>
-      </div>
-    </section>
-    <footer>
-      <span>Escape.</span> 
-      <nav>
-        <a href="">HOME</a>
-        <a href="">CATEGORIES</a>
-        <a href="">ABOUT</a>
-        <a href="">CONTACT</a>
-      </nav>
     </footer>
   </body>
 </html>
-
