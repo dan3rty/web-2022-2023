@@ -1,6 +1,6 @@
 .header-block
 {
-    height: 360px;
+    height: 160px;
     background: #FFFFFF; 
 }
 
@@ -14,17 +14,22 @@
     color: #2E2E2E;
 }
 
-.header-block__title_color_black
+.top-block 
+{
+    height: 200px;
+}
+
+.top-block__title_color_black
 {
     color: #2E2E2E;
 }
 
-.header-block__text_color_black
+.top-block__text_color_black
 {
     color: rgba(46, 46, 46, 0.63);
 }
 
-.header-block__image
+.image-post
 {
     height: 534px;
     width: 100%;

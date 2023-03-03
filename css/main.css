@@ -16,13 +16,13 @@
     text-transform: uppercase;
 }
 
-.header-block__title
+.top-block__title
 {
     font: 400 50px/1.02 "Lora";
     letter-spacing: 2px;
 }
 
-.header-block__text
+.top-block__text
 {
     font: 400 17px/1.18 "Oxygen";
 }
