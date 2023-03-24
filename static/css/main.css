@@ -50,7 +50,7 @@
 
 .bottom-block
 {
-    background: #4D565D url(../images/footer.jpg);
+    background: #4D565D url(../img/footer.jpg);
     background-size: cover;
     min-height: 378px;
     display: flex;

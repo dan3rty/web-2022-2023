@@ -5,7 +5,7 @@
 
 .top-block
 {
-    background: url(../images/header.png) no-repeat;
+    background: url(../img/header.png) no-repeat;
     background-size: cover;
     height: 500px;
     display: flex;
@@ -113,12 +113,12 @@
 
 .featured-post_image_the-road-ahead
 {
-    background: url(../images/the_road_ahead.jpg);
+    background: url(../img/the_road_ahead.jpg);
 }
 
 .featured-post_image_from-top-down
 {
-    background: url(../images/from_top_down.jpg);
+    background: url(../img/from_top_down.jpg);
 }
 
 .featured-post__title 

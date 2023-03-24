@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Escape</title>
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Lora&family=Roboto&display=swap" rel="stylesheet" />
+  </head>
+  <body class="page">
+    <header class="header-block header-block_position_absolute">
+      <span class="header-block__logo header-block__logo_color_white">Escape.</span>
+      <nav class="header-block__navigation">
+        <a class="header-block__ref header-block__ref_color_white" href="">HOME</a>
+        <a class="header-block__ref header-block__ref_color_white" href="">CATEGORIES</a>
+        <a class="header-block__ref header-block__ref_color_white" href="">ABOUT</a>
+        <a class="header-block__ref header-block__ref_color_white" href="">CONTACT</a>
+      </nav>
+    </header>
+    <div class="top-block">
+      <h1 class="top-block__title top-block__title_color_white">{{ .Title }}</h1>
+      <span class="top-block__text top-block__text_color_white">{{ .SubTitle }}</span>
+      <button class="top-block__button">View Latest Posts</button>      
+    </div>
+    <div class="tag-block">
+      <a class="tag-block__tag" href="">Nature</a>
+      <a class="tag-block__tag" href="">Photography</a>
+      <a class="tag-block__tag" href="">Relaxation</a>
+      <a class="tag-block__tag" href="">Vacation</a>
+      <a class="tag-block__tag" href="">Travel</a>
+      <a class="tag-block__tag" href="">Adventure</a>
+    </div>
+    <div class="main-block">
+      <section class="featured-posts">
+        <h2 class="featured-posts__title">Featured Posts</h2>
+        <div class="featured-posts-block">
+        {{ range .FeaturedPosts }}
+          <div class="featured-post {{ .ImgModifier }}">
+            <h3 class="featured-post__title">{{ .Title }}</h3>
+            <span class="featured-post__description">{{ .Description }}</span>
+            <div class="featured-post__submenu">
+              <div class="featured-post-submenu__author">
+                <img class="featured-post__author-image" src="{{ .AuthorImg }}" alt="Mat Vogels" />
+                <span class="featured-post__author">{{ .Author }}</span>
+              </div>
+              <span class="featured-post__date">{{ .PublishDate }}</span>
+            </div>
+          </div>
+        {{ end }}
+        </div>
+      </section>
+      <section class="recent-post-block">
+        <h2 class="recent-posts-block__title">Most Recent</h2>
+        <div class="recent-posts">
+        {{ range .MostRecentPosts }}
+          <div class="recent-post">
+            <img class="recent-post__image" src="{{ .PostImg }}" alt="Still Standing Tall" />
+            <div class="recent-post__info">
+              <h3 class="recent-post__title">{{ .Title }}</h3>
+              <span class="recent-post__description">{{ .Description }}</span>
+            </div>
+            <div class="recent-post__submenu">
+              <div class="recent-post-submenu__author">
+                <img class="recent-post__author-image" src="{{ .AuthorImg }}" alt="William Wong" />
+                <span class="recent-post__author">{{ .Author }}</span>
+              </div>
+              <span class="recent-post__date">{{ .PublishDate }}</span>
+            </div>
+          </div>
+        {{ end }}
+        </div>
+      </section>
+    </div>
+    <div class="bottom-block">
+      <form class="bottom-block__form">
+        <h2 class="bottom-block__form-title">Stay in Touch</h2>
+        <div class="bottom-block__form-info">
+          <input class="bottom-block__email" type="text" name="useremail" placeholder="Enter your email addres" />
+          <input class="bottom-block__submit" type="submit" name="submit" value="Submit" />
+        </div>
+      </form>
+      <footer class="footer-block">
+        <span class="footer-block__logo">Escape.</span> 
+        <nav class="footer-block__nav">
+          <a class="footer-block__ref" href="">HOME</a>
+          <a class="footer-block__ref" href="">CATEGORIES</a>
+          <a class="footer-block__ref" href="">ABOUT</a>
+          <a class="footer-block__ref" href="">CONTACT</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
